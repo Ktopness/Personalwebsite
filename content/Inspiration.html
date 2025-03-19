@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration - Katy Topness</title>
+    <style>
+        body {
+            background-color: #DDA0DD; /* Plum background */
+            font-family: 'Arial', sans-serif; /* Professional sans-serif font */
+            color: #2F4F4F; /* Dark Green text */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2F4F4F; /* Dark Green */
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 5px solid #8A2BE2; /* Lighter plum */
+            border-radius: 0 0 20px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
+            font-family: 'Helvetica Neue', sans-serif; /* Modern, clean font for name */
+        }
+        .top-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .top-links a {
+            color: #2F4F4F;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .top-links a:hover {
+            background-color: #6A5ACD; /* Hover effect with plum background */
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .tabs button {
+            background-color: #6A5ACD; /* Plum color */
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .tabs button:hover {
+            background-color: #5F4B8B; /* Darker plum */
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            margin-top: 20px;
+            border: 2px solid #8A2BE2; /* Plum border */
+            border-radius: 10px;
+            background-color: white;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        img {
+            width: 150px; /* Larger size for the images */
+            margin: 10px;
+            border-radius: 8px;
+            border: 2px solid #8A2BE2; /* Plum border around the image */
+        }
+        h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #2F4F4F;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        p {
+            font-style: italic;
+            font-size: 1.1rem;
+            text-align: center; /* Centered description */
+        }
+        .two-columns {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #2F4F4F;
+            margin-top: 30px;
+        }
+        /* Centering the images for the Books tab */
+        .book-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Inspiration - Katy Topness</h1>
+    </header>
+
+    <!-- Top Links Section -->
+    <div class="top-links">
+        <a href="Home page HTML.html">Home</a>
+        <a href="https://www.linkedin.com/in/katytopness/" target="_blank">LinkedIn</a>
+        <a href="Resume.html">Resume</a>
+        <a href="pilates.html">Wellness</a> <!-- New Wellness Link -->
+    </div>
+
+    <!-- Tab Buttons -->
+    <div class="tabs">
+        <button onclick="showTab('books')">Books</button>
+        <button onclick="showTab('people')">People</button>
+        <button onclick="showTab('hobbies')">Hobbies</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="container">
+        <div id="books" class="tab-content">
+            <h2>Books</h2>
+            <div class="book-images">
+                <img src="happy.jpg" alt="Happy Image">
+                <img src="team.jpg" alt="Team Image">
+                <img src="library.jpg" alt="Library Image">
+            </div>
+        </div>
+
+        <div id="people" class="tab-content">
+            <h2>People</h2>
+            <ul>
+                <li><strong>Mel Robbins</strong> - The Let Them Theory</li>
+                <li><strong>My parents</strong> - For always pushing me to do and be my best</li>
+                <li><strong>The kids I surround myself with</strong> - To see childlike joy in myself</li>
+            </ul>
+            <div style="text-align: center;">
+                <p>Check out this video that highlights the importance of childlike joy!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-FJ3GNx7Nug" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div id="hobbies" class="tab-content">
+            <h2>Hobbies</h2>
+            <p>Finding hobbies really helped me find peace in being alone and loving myself</p>
+            <div class="two-columns">
+                <ul>
+                    <li>Felting</li>
+                    <li>Ceramics</li>
+                    <li>Biking</li>
+                </ul>
+                <ul>
+                    <li>Wakeboarding</li>
+                    <li>Embroidery</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Thank you for exploring my inspirations!</p>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+        }
+
+        // Default to show the books tab
+        showTab('books');
+    </script>
+
+</body>
+</html>
+
+
+
